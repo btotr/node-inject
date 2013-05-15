@@ -1,0 +1,27 @@
+{
+    "name": "node-inject",
+    "description": "A middleware for node-http-proxy that injects a script to the head of the document",
+    "tags": ["http-proxy", "middleware"],
+    "version": "0.1.0",
+    "author": {
+        "name": "Colin Meerveld"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/btotr/node-inject.git"
+    },
+    "bugs": {
+        "url": "https://github.com/btotr/node-inject/issues"
+    },
+    "dependencies": {
+        "http-proxy": "0.8.7",
+        "connect": "2.7.9"
+    },
+    "devDependencies": {
+        "vows": "latest"
+    },
+    "scripts": {
+        "test": "vows ./test/injection.js"
+    },
+    "license": "MIT/X11"
+}
