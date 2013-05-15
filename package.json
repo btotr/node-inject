@@ -18,7 +18,8 @@
         "connect": "2.7.9"
     },
     "devDependencies": {
-        "vows": "latest"
+        "vows": "latest",
+        "http-get": "latest"
     },
     "scripts": {
         "test": "vows ./test/injection.js"
