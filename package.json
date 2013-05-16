@@ -2,7 +2,7 @@
     "name": "node-inject",
     "description": "A middleware for node-http-proxy that injects a script to the head of the document",
     "tags": ["http-proxy", "middleware"],
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": {
         "name": "Colin Meerveld"
     },
