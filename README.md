@@ -16,21 +16,23 @@ The following example will inject a script to the nodejs website through a proxy
 
 ```
 var http = require('http'),
-    httpProxy = require('http-proxy'),
-    connect = require('connect');
-  
+    httpProxy = require('http-proxy'); 
+
 httpProxy.createServer(
-    require('node-inject')("http://localhost:9000/inject.js"),
+    require('node-inject')("https://raw.github.com/btotr/node-inject/master/example/inject.js"),
     function (req,res,proxy) {
         proxy.proxyRequest(req, res, {
           host: 'nodejs.org',
           port: 80
         });
     }
-).listen(8000);
+).listen(process.env.PORT || 8000);
+```
 
-connect.createServer(
-  connect.static(__dirname)
-).listen(9000);
+To run this example you will need http-proxy 0.8.7 as-well.
 
 ```
+$ npm install http-proxy@0.8.7
+```
+
+
